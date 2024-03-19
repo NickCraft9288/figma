@@ -2,7 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url("https://p0.nicelocal.co.nl/preview/IiBEIXyyfJvp-YDTd4pvug/1120x700x85/1/1/c/original_61585591f049f220dd5ea738_61596c0d9c49a.jpg");
+    background-size: cover; /* Zorgt ervoor dat de achtergrondafbeelding het volledige scherm bedekt */
+    background-position: center; /* Plaatst de achtergrondafbeelding in het midden van het scherm */
+    background-repeat: no-repeat; /* Voorkomt dat de achtergrondafbeelding wordt herhaald */
+    height: 100vh; /* Zet de hoogte van de achtergrondafbeelding op de maximale hoogte van het scherm */
 }
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: contain; /* Pas de grootte van de achtergrondafbeelding aan om het volledige scherm te bedekken */
+    }
+}
+
 
 header {
     background-color: #333;
@@ -12,6 +23,7 @@ header {
 }
 
 nav ul {
+    color: #fff;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -20,9 +32,11 @@ nav ul {
 nav li {
     display: inline;
     margin-right: 10px;
+    color: #fff; /* Maakt de links wit */
 }
 
 main {
+    color: #fff;
     padding: 20px;
 }
 
@@ -38,6 +52,7 @@ footer {
 
 .hero {
     text-align: center;
+    color: #fff;
 }
 
 .features {
@@ -48,5 +63,6 @@ footer {
 
 .about-us {
     margin-top: 20px;
+    color: #fff;
 }
- 
+
